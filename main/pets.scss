@@ -1,0 +1,97 @@
+
+$card-backgound-color:#fafafa;
+$shadoe-color:#f1cdb3;
+
+$btn-border-color:#f1cd83;
+$btn-hover-color:#fddcc4;
+
+@mixin flexColumn($display) {
+    display: inline-#{$display};
+    flex-direction: column;    
+}
+
+.pets, .pets *{
+    position: absolute;
+}
+.pets{    
+    height: 877px; left: 0%; 
+    right: 0%; 
+    top:1496px;
+    background: #f6f6f6;    
+    .pets-content{        
+        width: 1200px; height: 697px;
+        left: calc(50% - 1200px/2);
+        top: 80px;
+        border: 1px dotted black;
+        display: flex; flex-flow: column nowrap; align-items: center;
+        h3{          
+            text-align: center;           
+         };
+    };    
+    .slider{
+        display: flex; flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%; height: 435px; left:0px; top:150px;
+        //border: 1px dotted #cccccc;
+        .button_arrow{ 
+            position: absolute;           
+            border: 2px solid #f1cdb3;
+            box-sizing: border-box;
+            border-radius: 100px;
+            width: 52px; height: 52px; top:192px;
+            left:0px;
+            background: url(../assets/icons/Arrow_left.png) no-repeat;
+            background-position: 50% 50%; background-size: 40% 20%;
+        }
+        .right{
+            background: url(../assets/icons/Arrow_right.png) no-repeat;
+            background-size: 40% 20%; background-position: 50% 50%;
+            left: calc(100% - 52px);
+        }
+        .card{
+            position:static;
+            @include flexColumn(flex);
+            justify-content:space-between;
+            align-items: center; 
+            width: 270px; height: 435px;
+            background: $card-backgound-color;
+            background-color: $card-backgound-color;             
+            img{
+                border-radius: 20px;
+            }
+            .pet-name { 
+                position: absolute;
+                top: 300px;
+                display: flex; flex-flow: column;
+                align-items: center;                
+                margin: 0; padding: 0;
+                box-sizing: border-box;                
+                font: normal 400 20px Georgia, sans-serif;
+                line-height: 23px;
+                letter-spacing: .06em;                
+                text-shadow: -3px -3px 5px $shadoe-color;                
+            };
+            .btn_card {                
+                @include flexColumn(flex);
+                align-items: center;
+                width:187px; height:52px;                
+                padding: 15px 45px;                
+                font-size: 18px;
+                border: none;
+                border-radius: 25px;
+                position: absolute;
+                top: 353px;
+            };
+            &:hover{
+                cursor:pointer;
+                background-color: darken($card-backgound-color,15);
+                .btn_card {
+                    background-color: $btn-hover-color;
+                    border:2px solid transparent;              
+                    cursor:pointer;
+                };
+            };
+        };        
+    };    
+}
