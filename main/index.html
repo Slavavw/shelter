@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shelter</title>
+  <link rel ='stylesheet' href='/assets/reset_style.css'>
+  <link rel ='stylesheet' href='style.css'>
+  <link rel ='stylesheet' href='about.css'>
+  <link rel ='stylesheet' href='pets.css'>
+  <link rel ='stylesheet' href='help.css'>
+  <link rel ='stylesheet' href='donation.css'>
+  <link rel="stylesheet" href ='footer.css'>
+</head>
+<body>
+    <div class = 'wrapper' id = 'main'>
+        <header class = 'header'>
+            <nav class = 'logo'><p class ='title'>Cozy House</p><p class ='subtitle'>Shelter for pets in Boston</p></nav>
+            <nav class='nav_menu'>
+                <ul>
+                    <li><a href='#main'>About the shelter</a></li>
+                    <li><a href='#'>Our pets</a></li>
+                    <li><a href='#'>Help the shelter</a></li>
+                    <li><a href='#'>Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class = 'start_screen'>            
+            <div class = 'content'>
+                <p class = 'heading'>Not only people<br>need a house</p>
+                <p class = 'subheading'>We offer to give a chance to a little and nice puppy with an extremely<br>wide and open heart. He or she will love you more than anybody else<br>in the world, you will see!</p>
+                <a class = 'button_primary' href="#">Make a friend</a>
+            </div>            
+            <div class ='start-screen-puppy'></div>            
+        </div>
+    </div>
+    <div class = 'about'>
+        <div class ='about-content'>
+            <div class='about-pets'></div>
+            <div class = 'content-about'>
+                <h3>About the shelter<br>“Cozy House”</h3>
+                <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+                <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+            </div>
+        </div>
+    </div>
+    <div class = 'pets'>
+        <div class = 'pets-content'>
+            <h3>Our friends who<br>are looking for a house</h3>
+            <div class = 'slider'>
+                <button class = 'button_arrow left'></button>
+            <!--   <div class = 'card'>
+                    <img src ='../assets/images/pets-katrine.png' alt = 'cat'>
+                    <p class="pet-name">Katrin</p>
+                    <button class ='btn_card'>Learn more</button>
+               </div>
+               <div class = 'card'>
+                    <img src ='../assets/images/pets-jennifer.png' alt = 'cat'>
+                    <p class="pet-name">Jennifer</p>
+                    <button class ='btn_card'>Learn more</button>            
+                </div>
+                <div class = 'card'>
+                    <img src ='../assets/images/pets-woody.png' alt = 'cat'>
+                    <p class="pet-name">Woody</p>
+                    <button class ='btn_card'>Learn more</button>            
+                </div>
+            -->
+                <button class = 'button_arrow right'></button>
+            </div>
+        </div>
+    </div>
+    <div class = 'help'>
+        <div class ='help_content'>
+            <h3 class ='heading'>How you can help<br>our shelter</h3>
+            <div class = 'list'>
+                <ul>
+                    <li><button><div class='Pet_food'></div><h4>Pet food</h4></button></li>
+                    <li><button><div class='Transportation'></div><h4>Transportation</h4></button></li>
+                    <li><button><div class='Toys'></div><h4>Toys</h4></button></li>
+                    <li><button><div class='Bowls'></div><h4>Bowls and cups</h4></button></li>
+                    <li><button><div class='Shampoos'></div><h4>Shampoos</h4></button></li>
+                </ul>
+                <ul>
+                    <li><button><div class='Vitamins'></div><h4>Vitamins</h4></button></li>
+                    <li><button><div class='Medicines'></div><h4>Medicines</h4></button></li>
+                    <li><button><div class='Collars'></div><h4>Collars / leashes</h4></button></li>
+                    <li><button><div class='Sleeping'></div><h4>Sleeping areas</h4></button></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class ='Donation'>
+        <div class ='Donation-content'>
+            <div class ='donation-dog'>
+                <img src='../assets/images/donation-dog.png'>
+            </div>
+            <div class = 'content'>
+                <h3>You can also<br>make a donation</h3>
+                <h5>Name of the bank / Type of bank account</h5>                
+                <credit-card class = 'credit-card'></credit-card>
+                <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class = 'footer_conteiner'>
+            <div class = 'contact'>
+                <h3>For questions<br>and suggestions</h3>
+                <credit-card class ='email'></credit-card>
+                <credit-card class ='phone'></credit-card>
+            </div>
+            <div class = 'location'>
+                <h3>We are waiting<br>for your visit</h3>
+                <ul>
+                    <li><a href='#'>1 Central Street, Boston<br>(entrance from the store)</a></li>
+                    <li><a href='#'>18 South Park, London </a></li>
+                </ul>
+            </div>
+            <div class='footer_puppy'></div>            
+        </div> 
+    </footer>
+    <script type = 'text/javascript'> 
+        let credit_card,mail, phone;       
+        class CreditCard extends HTMLElement{
+            constructor(){
+                super(); 
+                this.defaultCard = "8380 2880 8028 8791 7435";
+                this.attachShadow({mode:'open'});
+                this.shadowRoot.append(CreditCard.template.content.cloneNode(true));
+                this.wrapper = this.shadowRoot.querySelector('div');
+                this.centralSlot = this.shadowRoot.querySelector('slot[name="center"]');        
+                this.leftSlot = this.shadowRoot.querySelector('slot[name="left"]');                
+                this.rightSlot = this.shadowRoot.querySelector('slot[name="right"]');
+                this.centralSlot.onclick= (event) =>{
+                        event.target.style.border ="1px dotted #F1CDB3";
+                };
+                this.centralSlot.addEventListener('change',(event)=>{
+                    event.stopPropagation(); event.preventDefault();
+                    if (this.disabled) return;                    
+                    let custom_event = new CustomEvent('enterCard',{bubbles:false, detail:event.target});
+                    this.dispatchEvent(custom_event);                    
+                });
+                this.centralSlot.onkeydown =(event)=>{
+                    let target = event.target; let shadow = '#ffffff';
+                    if  ( target.type && /text/i.test(target.type))  {
+                        if ( !(/[0-9]/.test(event.key)) ) {
+                            target.placeholder = 'input only number';
+                            event.preventDefault(); 
+                            return;
+                        }
+                        shadow ='#5B483A';                        
+                    }
+                    target.style.height = '50px'; target.style.fontSize = '25px'; 
+                    target.style.textShadow = `-3px -3px 5px ${shadow}`;
+                    target.style.color = 'red'; target.style.fontWeight = '700';
+                    
+                }
+            }            
+            attributeChangedCallback(name,oldValue,newValue){
+                if(name == 'disabled') {this.centralSlot.disabled = newValue !==null;}
+                else if (name =='hidden'){ this.centralSlot.style.hidden = newValue;
+                    this.leftSlot.hidden = newValue; this.rightSlot.hidden = newValue;
+                 }
+                else if( (name == 'width') || name == 'height'  ){
+                    if ( /^auto$/i.test(newValue)) {
+                        let r1 = this.centralSlot.getBoundingClientRect(), 
+                        r2 = this.leftSlot.getBoundingClientRect(), 
+                        r3 = this.rightSlot.getBoundingClientRect();
+                        newValue = [r1.width,r2.width,r3.width].reduce((x,y)=>x+y,10);
+                    }
+                    this.wrapper.style[name] = newValue;
+                }
+                else {
+                    this.centralSlot.firstChild[name] = newValue;
+                }
+            }
+            get placeholder(){return this.getAttribute('placeholder')};            
+            get value(){return this.getAttribute('value')};
+            get disabled(){return this.hasAttribute('disabled')};
+            get hidden(){return this.hasAttribute('hidden')};
+            get width(){return this.getAttribute('width')};
+            get height(){return this.getAttribute('height')};            
+            
+            set placeholder(value){this.setAttribute('placeholder',value)};            
+            set value(text){ this.setAttribute('value',text)};
+            set disabled(value){ 
+                if (value) this.setAttribute('disabled',"");
+                else this.removeAttribute('disabled')
+            }    
+            set hidden(value){
+                if (value) this.setAttribute('hidden',"");
+                else this.removeAttribute('hidden')
+            }
+            set width(value){ this.setAttribute('width'.newValue);}
+            set height(value){ this.setAttribute('height'.newValue);}            
+
+            static setHTML(type){
+                CreditCard.template.innerHTML = `
+                <style>
+                    div { display: flex; 
+                        flex-flow: row nowrap; 
+                        justify-content: left; align-items: left;
+                        border-radius: 10px;
+                        background: #F1CDB3;
+                    }
+                    slot {user-select:none; cusor:default;}
+                    slot[name='center'] * {
+                        font-family: 'merriweather', Georgia, sans-serif;
+                        background: #F1CDB3; 
+                        font-size: 18px; letter-spacing: 2px;                      
+                        width: 100%; height:100%;
+                        border: none;// 1px dotted #F1CDB3;
+                        border-radius: 10px;
+                    }                    
+                </style>
+                <div>        
+                <slot name = "left"></slot>
+                <slot name="center"></slot>
+                <slot name ='right'></slot>
+                </div>`
+            }
+        }
+        //  color: #b2b2b2;
+        CreditCard.observedAttributes = ['disabled','placeholder','value','width','height','hidden'];        
+        CreditCard.template =document.createElement('template'); CreditCard.setHTML('text');
+        customElements.define('credit-card',CreditCard);
+        ////////////------credit_card--------////////
+        credit_card = document.querySelector('.credit-card');        
+        let img = document.createElement('img'); img.setAttribute('src','../assets/icons/credit-card.svg');
+        credit_card.leftSlot.append(img);
+        let input = document.createElement('input'); input.type = 'text'; input.classList.add('inpt_card');
+        input.maxLength = 20; credit_card.centralSlot.append(input);
+        credit_card.setAttribute('placeholder',credit_card.defaultCard);
+        credit_card.setAttribute('size','28');        
+        credit_card.setAttribute('width','340px');        
+        function handleCreditCard(event){
+            let target = event.detail; 
+            if(  !/email|phone/i.test(target.type) ){
+                if (! (/[0-9]{20}/.test(target.value))) {
+                    alert('Must be 20th number');
+                    target.setAttribute('placeholder',this.defaultCard);
+                }
+                else{                
+                    target.setAttribute('placeholder',target.value.match(/(?<el>[0-9]{4})/gi).join(' '));
+                }
+            }
+            else {
+                target.setAttribute('placeholder',target.value);
+            }
+            target.value ='';
+            target.style.height = '30px'; target.style.fontSize = '18px'; 
+            target.style.textShadow = 'none'; target.style.border ='none';
+            target.style.color = '#b2b2b2';                    
+        }        
+ ///////////-------mail---------//////////       
+        mail = document.querySelector('credit-card.email');        
+        mail.defaultCard = 'shelter-help@gmail.com';
+        img = document.createElement('img');         
+        img.setAttribute('src','../assets/icons/mail.png');
+        mail.leftSlot.append(img);  
+        input = document.createElement('input'); input.type = 'email'; input.classList.add('email');
+        input.name = 'email'; mail.centralSlot.append(input);        
+        mail.setAttribute('placeholder',mail.defaultCard);        
+        mail.setAttribute('width','100%');
+////////////------phone--------////////
+        phone = document.querySelector('credit-card.phone');        
+        phone.defaultCard = '8(029)111 111 111';
+        img = document.createElement('img');         
+        img.setAttribute('src','../assets/icons/phone.png');
+        phone.leftSlot.append(img);
+        input = document.createElement('input'); input.type = 'tel'; input.classList.add('phone');
+        input.name = 'usrtel'; phone.centralSlot.append(input);
+        phone.setAttribute('placeholder',phone.defaultCard);        
+        phone.setAttribute('width','100%');        
+       let ar_el = [credit_card,mail,phone];
+       ar_el.map( el=>el.addEventListener('enterCard',handleCreditCard ));
+       ar_el.shift();
+       ar_el.map((element) =>{
+            element.leftSlot.firstChild.style['background'] = 'transparent';
+            element.leftSlot.firstChild.style['transform'] = 'scale(.6)';
+            element.centralSlot.firstChild.style['background'] = 'transparent';
+            element.centralSlot.firstChild.style['color'] = '#F1CDB3';
+            element.wrapper.style['background'] = 'transparent';            
+            element.setAttribute('width','300px');
+            element.centralSlot.firstChild.value = element.defaultCard;
+       });
+
+       /////************cards****//////
+       class Card{
+           constructor(img,name,caption = 'Learn more'){ 
+               this.card = document.createElement('div'); this.card.classList.add('card');
+               this.img = document.createElement('img'); 
+               this.img.setAttribute('src','../assets/images/'.concat(img));
+               this.img.setAttribute('alt',name);
+               this.p = document.createElement('p'); 
+               this.p.classList.add('pet-name'); 
+               this.p.textContent =name;
+               this.btn = document.createElement('button');
+               this.btn.classList.add('btn_card');
+               this.btn.textContent = caption;
+               this.btn.onclick = (event)=>{
+                   let url = new URL(document.location);
+                   url.searchParams.set('pet',name);
+                   document.location = url.href;
+               }
+           }
+           createCard(){               
+               let template = document.createElement('template');
+                template.content.append(this.card);
+                template.content.firstChild.append (this.img,this.p,this.btn);                
+                return template.content;
+           }
+        /*   static initStyle(){
+                let style = document.createElement('style');
+                style.type = "text/css";
+                    style.append(document.createTextNode(".card{ position:static;"+
+                        "display: inline-flex; flex-direction: column;"+    
+                        "justify-content:space-between;align-items: center;"+
+                        "width: 270px; height: 435px;background: #fafafa;"+
+                        "background-color: #fafafa;}"+
+                    ".card img{ border-radius: 20px; }"+
+                    ".card .pet-name { position: absolute; top: 300px;"+
+                        "display: flex; flex-flow: column; align-items: center;"+
+                        "margin: 0; padding: 0;box-sizing: border-box;"+
+                        "font: normal 400 20px Georgia, sans-serif; line-height: 23px;"+
+                        "letter-spacing: .06em; text-shadow: -3px -3px 5px #f1cdb3;}"+
+                    ".card .btn_card {flex-direction: column; align-items: center;"+
+                        "width:187px; height:52px;padding: 15px 45px;font-size: 18px;"+
+                        "border: none; border-radius: 25px; position: absolute; top: 353px; }"+
+                    ".card :hover{cursor:pointer; background-color: darken(#fafafa,15)}"+
+                    ".card .btn_card:hover { background-color: #fddcc4;"+
+                        "border:2px solid transparent;cursor:pointer;}"));
+                        return style;
+           }*/
+        }
+
+        const slider = document.querySelector('.slider');        
+        let ar_card = Array.from({
+            0:(new Card('pets-katrine.png','Katrin')).createCard(),
+            1:(new Card('pets-jennifer.png','Jennifer')).createCard(),
+            2:(new Card('pets-woody.png','Woody')).createCard(),            
+            length:3
+        });
+        
+        slider.querySelector('.right').before( ...ar_card );
+        
+        
+        /*class Card{
+           constructor( length){
+               this.length = length; 
+               this.img = document.createElement('img'); 
+               this.img.setAttribute('src','../assets/images/'.concat(img));
+               this.img.setAttribute('alt',name);
+               this.p = document.createElement('p'); 
+               this.p.classList.add('pet-name'); 
+               this.p.textContent =name;
+               this.btn = document.createElement('button');
+               this.btn.classList.add('btn-card');
+               this.btn.textContent = caption;
+               this.btn.onclick = (event)=>{
+                   let url = new URL(document.location);
+                   url.searchParams.set('pet',name);
+                   document.location = url.href;
+               }
+           }
+           static createCard(){
+               let template = document.createElement('template');
+                template.content.append(this.img,this.p,this.btn);
+                return template.content;
+           } 
+           
+           [Symbol.iterator](){
+               const length = 1;
+               return {
+                   next(){
+                       for( let i =0; i<length;i++) return { value: createCard(), done:false}
+                       return {done:true}
+                   },
+                   [Symbol.iterator](){return this;}
+               }
+            }
+        }*/
+
+    </script>
+</body>
+</html>
