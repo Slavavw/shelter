@@ -1,0 +1,155 @@
+.pets, .pets * {
+  position: absolute;
+}
+
+.pets {
+  height: 877px;
+  left: 0%;
+  right: 0%;
+  top: 1496px;
+  background: #f6f6f6;
+}
+
+.pets .pets-content {
+  width: 1200px;
+  height: 697px;
+  left: calc(50% - 1200px/2);
+  top: 80px;
+  border: 1px dotted black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pets .pets-content h3 {
+  text-align: center;
+}
+
+.pets .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 435px;
+  left: 0px;
+  top: 150px;
+}
+
+.pets .slider .button_arrow {
+  position: absolute;
+  border: 2px solid #f1cdb3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  top: 192px;
+  left: 0px;
+  background: url(../icons/Arrow_left.png) no-repeat;
+  background-position: 50% 50%;
+  background-size: 40% 20%;
+}
+
+.pets .slider .right {
+  background: url(../icons/Arrow_right.png) no-repeat;
+  background-size: 40% 20%;
+  background-position: 50% 50%;
+  left: calc(100% - 52px);
+}
+
+.pets .slider .card {
+  position: static;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  height: 435px;
+  background: #fafafa;
+  background-color: #fafafa;
+}
+
+.pets .slider .card img {
+  border-radius: 20px;
+}
+
+.pets .slider .card .pet-name {
+  position: absolute;
+  top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: normal 400 20px Georgia, sans-serif;
+  line-height: 23px;
+  letter-spacing: .06em;
+  text-shadow: -3px -3px 5px #f1cdb3;
+}
+
+.pets .slider .card .btn_card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 187px;
+  height: 52px;
+  padding: 15px 45px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  position: absolute;
+  top: 353px;
+}
+
+.pets .slider .card:hover {
+  cursor: pointer;
+  background-color: #d4d4d4;
+}
+
+.pets .slider .card:hover .btn_card {
+  background-color: #fddcc4;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+/*# sourceMappingURL=pets.css.map */

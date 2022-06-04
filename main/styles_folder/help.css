@@ -1,0 +1,162 @@
+.help, .help {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.help {
+  height: 611px;
+  top: 2373px;
+  right: 0%;
+  left: 0%;
+  background: #ffffff;
+}
+
+.help .help_content {
+  width: 1200px;
+  height: 431px;
+  top: 80px;
+  left: calc(50% - 1200px/2);
+  border: 1px dotted #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.help .help_content h3 {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.help .help_content .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.help .help_content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+}
+
+.help .help_content li {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help .help_content li div {
+  width: 100%;
+  height: calc(100%/2 + 10px);
+}
+
+.help .help_content li .Pet_food {
+  background: url(../icons/Vector.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li .Transportation {
+  background: url(../icons/transportation.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li .Toys {
+  background: url(../icons/toys.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li .Bowls {
+  background: url(../icons/bowls-and-cups.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li .Shampoos {
+  background: url(../icons/shampoos.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li .Vitamins {
+  background: url(../icons/vitamins.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li .Medicines {
+  background: url(../icons/medicines.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li .Collars {
+  background: url(../icons/collars-or-leashes.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li .Sleeping {
+  background: url(../icons/sleeping-area.png) no-repeat;
+  background-position: center top;
+}
+
+.help .help_content li h4 {
+  font: normal 400 15px Georgia, sans-serif;
+  line-height: 115%;
+  letter-spacing: .06em;
+  color: #545454;
+  padding: 0px 12px;
+}
+
+.help .help_content button {
+  height: 113px;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=help.css.map */

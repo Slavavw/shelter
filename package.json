@@ -2,7 +2,7 @@
   "name": "shelter-gh-pages",
   "version": "1.0.0",
   "description": "Shelter project",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "set NODE_ENV=development&&webpack",
     "start": "set NODE_ENV=development&&webpack  serve --open",
@@ -15,6 +15,7 @@
     "@babel/core": "^7.18.2",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
+    "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "postcss": "^8.4.14",

@@ -1,0 +1,126 @@
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: normal 400 35px Georgia, 'Times New Roman', Times, serif;
+  line-height: 130%;
+  color: #545454;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+h5 {
+  font: normal 400 15px Georgia, 'Times New Roman', Times, serif;
+  line-height: 110%;
+  letter-spacing: .06em;
+  color: #545454;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/merriweather-black-webfont.woff2") format("woff2"), url("../fonts/merriweather-black-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: merriweather;
+  src: url("../fonts/merriweather-blackitalic-webfont.woff2") format("woff2"), url("../fonts/merriweather-blackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.Donation * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.Donation {
+  position: absolute;
+  width: 100%;
+  height: 462px;
+  left: 0%;
+  right: 0%;
+  top: 2984px;
+  background-color: #f6f6f6;
+}
+
+.Donation .Donation-content {
+  position: absolute;
+  width: 915px;
+  height: 282px;
+  left: calc( 50% - 915px/2 + 0.5px);
+  top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.Donation .Donation-content .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Donation .Donation-content p {
+  font: italic 400 12px Arial, sans-serif;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+/*# sourceMappingURL=donation.css.map */

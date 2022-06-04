@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///E:/GrodFlex_Stream_03_03_20/shelter/slavavw-JSFE2022Q1/shelter/main/index.html",
+            "url": "file:///E:/shelter-gh-pages/main/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

@@ -12,15 +12,16 @@ console.log(mode);
 
 module.exports = {
  mode: mode,
- entry: './src/index.js',
+ devtool:'source-map', //для инспектирования в браузере чтобы отоброжался откуда берутся наши стили с какого файла тянутся
+ entry: './main/index.js',
  output: {
   filename: "[name].[contenthash].js",
- assetModuleFilename: 'assets/[hash][ext][query]', //модуль ресурсов куда будут скидываться файлы рксурсов img etc..
- clean: true, //указываем чтобы папка dist очищалась каждый раз при сборке
+  assetModuleFilename: 'assets/[hash][ext][query]', //модуль ресурсов куда будут скидываться файлы рксурсов img etc..
+  clean: true, //указываем чтобы папка dist очищалась каждый раз при сборке
 },
  plugins:[
   new MiniCssExtractPlugin({filename:'[name].[contenthash].css'}),
-  new htmlWebpackPlugin({template:path.join(__dirname,'main','index.html')}),
+  new htmlWebpackPlugin({filename:'index.html',template:'./main/index.html'}),
   new CleanWebpackPlugin(),
  ],
  module:{
@@ -38,9 +39,9 @@ module.exports = {
      'postcss-loader', //должно добавлять префиксы стилей под разные браузеры
      'sass-loader' //для обработки препроцессоров scss
      ]
-   },
+   },   
    {
-     test: /\.(img|svg|jpg|jpeg|gif)$/i,
+     test: /\.(img|svg|jpg|jpeg|gif|png)$/i,
      type: 'asset/resource',
    },
    {
